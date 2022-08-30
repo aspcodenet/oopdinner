@@ -29,8 +29,9 @@ class OurStack:
 
 
 class Patient:
-    def __init__(self, namn:str):
+    def __init__(self, namn:str, age:int):
         self.Namn = namn
+        self.Age = age
 
 queuen = []
 
@@ -49,15 +50,16 @@ def RopaUppNasta():
 
 
 k = OurQueue()  # class OutQueue ska ni skapa
-k.Add(Patient("Stefan"))
-k.Add(Patient("kalle"))
-k.Add(Patient("lisa"))
+k.__listan.append("Hej") 
+k.Add(Patient("Stefan",10))
+k.Add(Patient("kalle",20))
+k.Add(Patient("lisa",30))
 p = k.GetNext() # p.Namn = "Stefan"
 
 k = OurStack()  # class OurStack ska ni skapa
-k.Add(Patient("Stefan"))
-k.Add(Patient("kalle"))
-k.Add(Patient("lisa"))
+k.Add(Patient("Stefan",10))
+k.Add(Patient("kalle",20))
+k.Add(Patient("lisa",30))
 p = k.GetNext() # p.namn = "lisa"
 
 
