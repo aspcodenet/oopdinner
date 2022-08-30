@@ -48,6 +48,7 @@ class Patient22:
             print("För kort")
         else:
             self.__namn = newValue
+        
 
     
     @property        
@@ -64,9 +65,9 @@ p3 = Patient22(12, "Stefan",-45)
 print(p3.setNamn("Stefan1"))
 print(p3.getNamn())
 #p3.setAge(23)
-p3.age = 23
+p3.Age = 23
 
-p3.age = p3.age  + 1
+p3.Age = p3.Age  + 1
 #p3.setAge(p3.getAge() + 1)
 
 
