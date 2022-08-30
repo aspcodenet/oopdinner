@@ -37,7 +37,8 @@ class Patient22:
     def __init__(self, id:int, namn:str, age:int):
         self.__id = id
         self.__namn = namn
-        self._age = age
+        self.Age = 0
+        self.Age = age
     
     def getNamn(self):
         return self.__namn
