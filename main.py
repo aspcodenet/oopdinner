@@ -3,8 +3,10 @@ import random
 class OurQueue:
     def __init__(self):
         self.__listan = []
+
     def Add(self, p):
         self.__listan.append(p)
+
     def GetNext(self):
         if len(self.__listan) == 0:
             return None
@@ -16,8 +18,10 @@ class OurQueue:
 class OurStack:
     def __init__(self):
         self.__listan = []
+
     def Add(self, p):
         self.__listan.append(p)
+        
     def GetNext(self):
         if len(self.__listan) == 0:
             return None
@@ -32,6 +36,13 @@ class Patient:
     def __init__(self, namn:str, age:int):
         self.Namn = namn
         self.Age = age
+
+
+p = Patient("Stefan Holmberg", 50)
+p2 = Patient("Stefan Holmberg", 50)
+if p == p2:
+    print("Japp det är samma person") # todo add "Id"
+
 
 queuen = []
 
@@ -50,7 +61,6 @@ def RopaUppNasta():
 
 
 k = OurQueue()  # class OutQueue ska ni skapa
-k.__listan.append("Hej") 
 k.Add(Patient("Stefan",10))
 k.Add(Patient("kalle",20))
 k.Add(Patient("lisa",30))
